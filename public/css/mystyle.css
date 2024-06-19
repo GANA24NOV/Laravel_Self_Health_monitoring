@@ -1,0 +1,198 @@
+/* Global Styles */
+body {
+	background: url('img/biru.jpeg') no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Times New Roman', Times, serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #e94798;
+	color: #e7dfdf;
+	padding: 1rem 2rem;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar_menu {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar_item {
+	margin-right: 1rem;
+}
+
+.navbar_link {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+.navbar_link:hover {
+	color:  #D3BBFCff;
+}
+
+/* Header Styles */
+.home {
+	height: 120vh;
+	background: #ff9ee7cc;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+.home img {
+	width: fit-content;
+}
+
+.judul {
+	margin-bottom: 2rem;
+}
+
+.judul h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	color: #000000;
+}
+
+.judul p {
+	font-size: 2rem;
+	color: #0e0000;
+}
+
+.deskripsi button {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	border: none;
+	padding: 0.75rem 2rem;
+	background: #5846f9;
+	color: #fff;
+	font-size: 1rem;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+.deskripsi button:hover {
+	background-color: #454D7A;
+}
+
+/* Fitur Styles */
+.fitur {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+.kotak {
+	text-align: center;
+	margin: 0 2rem;
+}
+
+.kotak img {
+	width: 100px;
+}
+
+.kotak p {
+	font-size: 1.25rem;
+	color: #fff;
+	margin-top: 0.5rem;
+}
+
+/* Media Query for Smartphone */
+@media screen and (max-width: px) {
+    .header {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar_menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navbar_item {
+        margin-right: 0;
+    }
+
+    .navbar_link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .home {
+        padding: 2rem;
+        background-size: cover;
+        background-position: center;
+		padding-bottom: 0.4rem;
+    }
+
+    .judul h1 {
+        font-size: 2rem;
+    }
+
+    .judul p {
+        font-size: 1rem;
+    }
+
+    .deskripsi button {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+	.fitur {
+		display: grid;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 2rem;
+		flex-wrap: wrap; 
+	}
+	.kotak {
+		text-align: center;
+		margin: 1rem;
+		flex-basis: 45%; 
+	}
+
+    .kotak img {
+        width: 80px;
+    }
+
+	.kotak p {
+		font-size: 1rem; /* Mengurangi ukuran font untuk responsivitas */
+		color: #fff;
+		margin-top: 0.5rem;
+	}
+
+	/*corosel */
+	.carousel-container {
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	.carousel-slide {
+		display: flex;
+		transition: transform 0.5s ease;
+	}
+	
+	.carousel-slide img {
+		margin-right: 10px; /* Adjust the margin as needed */
+	} 
+}
